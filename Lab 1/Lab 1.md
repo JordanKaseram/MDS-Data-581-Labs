@@ -10,7 +10,39 @@ Given the normal distribution: $f(x) := \frac{1}{\sqrt{2 \pi} \sigma} \textrm{e}
 Hence we see that $L(0,1)$ achieves the greatest value and the standard normal distribution is most likely where the simulated normal random variate comes from. 
 
 ### Question 2
+assuming that  comes from a normal distribution  \( X \sim N(\mu, \sigma^2) \).
 
+Therefore, pdf of a normal distribution is
+
+$$
+f(x) = \frac{1}{\sqrt{2\pi}\sigma}
+\exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right).
+$$
+
+Since the observed value (x) is \( x = 1.2 \), the likelihood function is
+$$
+L(\mu, \sigma)
+= f(1.2)
+= \frac{1}{\sqrt{2\pi}\sigma}
+\exp\!\left(-\frac{(1.2-\mu)^2}{2\sigma^2}\right).
+$$
+
+Take log of the likelihood gives the log-likelihood function
+
+$$
+\ell(\mu, \sigma)
+= \log L(\mu, \sigma)
+= -\log(\sigma)
+- \frac{1}{2}\log(2\pi)
+- \frac{(1.2-\mu)^2}{2\sigma^2}.
+$$
+
+For any fixed \( \sigma > 0 \), this expression is maximized when  
+\( (1.2-\mu)^2 \) is minimized. This occurs when
+
+$$
+\hat{\mu} = 1.2.
+$$
 
 ### Question 3
 
